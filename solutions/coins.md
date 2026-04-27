@@ -1,4 +1,4 @@
-[../problems/coins.md](Problem Statement)
+[Problem Statement](../problems/coins.md)
 
 Part 1:
 
@@ -24,10 +24,12 @@ Observe then that having the same probability of flipping an even or odd number 
 
 But how does the polynomial help us?
 
-We can use the [https://en.wikipedia.org/wiki/Root_of_unity](roots of unity)! 
+We can use the [roots of unity](https://en.wikipedia.org/wiki/Root_of_unity)! 
 
 Consider $$q_n(-1)=k_0-k_1+k_2-k_3+\dots$$. This is precisely the expression above! Thus, we can observe $$q_n$$ has a root at $$x=-1$$ iff the odds of flipping an even or odd number of heads is the same!
 
-But we also know $$q_n(-1)$$ has a [https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra#Corollaries](unique factorization) as $$(1-p_1+p_1(-1))(1-p_2+p_2(-1))\dots(1-p_n-p_n(-1)) = (1-2p_1)(1-2p_2)\dots(1-2p_n)$$. Then for this product to equal zero we [https://en.wikipedia.org/wiki/Zero-product_property](must have) at least one of $$p_i=0.5$$.
+But we also know $$q_n(-1)$$ has a [unique factorization](https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra#Corollaries) as $$(1-p_1+p_1(-1))(1-p_2+p_2(-1))\dots(1-p_n-p_n(-1)) = (1-2p_1)(1-2p_2)\dots(1-2p_n)$$. Then for this product to equal zero we [must have](https://en.wikipedia.org/wiki/Zero-product_property) at least one of $$p_i=0.5$$.
 
-This also proves sufficience.
+This also proves sufficiency.
+
+Thanks to [Thomas](https://thomasqm.com) for the beautiful solution.
