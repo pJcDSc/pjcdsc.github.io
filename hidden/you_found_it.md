@@ -1,8 +1,8 @@
 good job!
 
-$$\frac12$$ 
+$$ 1+2 $$ 
 
-$hello\ world$
+$hello\ world 3+4$
 
 shimifawejapefoij
 
