@@ -1,8 +1,10 @@
 good job!
 
-$$ 1+2 $$ 
+$$
+\frac12
+$$ 
 
-$hello\ world 3+4$
+$$ hello\ world $$
 
 test $$ 123 $$ wow! i love inline $$ \frac{1}{2} $$ hmmmmmmmmmmmmmmmmmmmmmmmmm
 
