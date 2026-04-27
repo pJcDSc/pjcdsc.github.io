@@ -12,6 +12,8 @@ But we know $$P(h_{n-1} \text{ is even or odd}) = 1$$ and $$p_i=1-p_i=0.5$$, so 
 
 Part 2:
 
+We show the contrapositive - that is, if an even or odd number of heads is equally likely, then at least one coin must be fair.
+
 Given the coins $$p$$, let's try to write the distribution of likelihoods to flip any particular number of heads as a polynomial. The coefficient of each degree term will be the probability that we get that number of heads.
 
 We will construct the polynomial inductively: we'll let $$q_i$$ denote the above polynomial for the first $$i$$ coins.
