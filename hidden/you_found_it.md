@@ -1,8 +1,10 @@
 good job!
 
-$$\frac12$$ 
+$$
+\frac12
+$$ 
 
-$hello\ world$
+$$ hello\ world $$
 
 shimifawejapefoij
 
