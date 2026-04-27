@@ -14,7 +14,7 @@ We will construct the polynomial inductively: we'll let $$q_i$$ denote the above
 
 For a single coin, our polynomial is $$q_1 = (1-p_1) + p_1x$$.
 
-For the $$k$$th coin, our polynomial is $$\underbrace{q_{k-1}(1-p_k)}_{\text{Prior distribution and the $$k$$th coin is tails}} + \underbrace{q_{k-1}(p_kx)}_{\text{Same, but heads}}$$ = $$q_{k-1}(1-p_k+p_kx)$$
+For the $$k$$th coin, our polynomial is $$\underbrace{q_{k-1}(1-p_k)}_{\text{Prior distribution and the $k$th coin is tails}} + \underbrace{q_{k-1}(p_kx)}_{\text{Same, but heads}} = q_{k-1}(1-p_k+p_kx)$$
 
 Let's consider the polynomial $$k_0 + k_1x^1 + k_2x^2 + \dots + k_nx^n$$, where each $$k_i$$ denotes the probability of flipping $$i$$ heads.
 
