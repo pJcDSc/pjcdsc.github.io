@@ -20,9 +20,9 @@ For a single coin, our polynomial is $$q_1(x) = (1-p_1) + p_1x$$.
 
 For the $$k$$th coin, our polynomial is $$q_k(x)=\underbrace{(1-p_k)q_{k-1}(x)}_{k\text{th coin is tails}} + \underbrace{(p_kx)q_{k-1}(x)}_{k\text{th coin is heads}} = (1-p_k+p_kx)q_{k-1}(x)$$
 
-Then it's clear the full polynomial can be factored as $$q_n=(1-p_1+p_1x)(1-p_2+p_2x)\dots(1-p_n+p_nx) = k_0 + k_1x + \dots + k_nx^n$$.
+Then it's clear the full polynomial can be factored as $$q_n(x)=(1-p_1+p_1x)(1-p_2+p_2x)\dots(1-p_n+p_nx) = k_0 + k_1x + \dots + k_nx^n$$.
 
-Observe then that having the same probability of flipping an even or odd number of heads is equivalent to having $$\sum_{i\text{ even}}k_i=\sum_{j\text{ odd}}k_j\implies \sum_{i\text{ even}}k_i-\sum_{j\text{ odd}}k_j=0$$
+Observe then that having the same probability of flipping an even or odd number of heads is equivalent to having $$\sum_{i\text{ even}}k_i=\sum_{i\text{ odd}}k_i\implies \sum_{i\text{ even}}k_i-\sum_{i\text{ odd}}k_i=0$$
 
 But how does the polynomial help us?
 
