@@ -1,3 +1,5 @@
+# Coins problem
+
 Consider the following process:
 
 You are given $$ n $$ coins with independent probabilities $$ p_1, p_2, \dots, p_n $$ of landing heads-up. 
@@ -12,4 +14,4 @@ Part 2:
 
 Show that the above condition is also necessary - if none of the coins are fair, then it is impossible that an odd number and an even number of heads is equally likely.
 
-## [Solution](../solutions/coins.md)
+[Solution](../solutions/coins.md)

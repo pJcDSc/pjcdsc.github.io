@@ -1,3 +1,5 @@
+# Coins solution
+
 [Problem Statement](../problems/coins.md)
 
 Part 1:
