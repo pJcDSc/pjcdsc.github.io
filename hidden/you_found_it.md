@@ -6,6 +6,8 @@ $$
 
 $$ hello\ world $$
 
+test $$ 123 $$ wow! i love inline $$ \frac{1}{2} $$ hmmmmmmmmmmmmmmmmmmmmmmmmm
+
 shimifawejapefoij
 
 *star*
