@@ -18,7 +18,7 @@ We will construct the polynomial inductively: we'll let $$q_i$$ denote the above
 
 For a single coin, our polynomial is $$q_1(x) = (1-p_1) + p_1x$$.
 
-For the $$k$$th coin, our polynomial is $$q_k(x)=\underbrace{(1-p_k)q_{k-1}(x)}_{k\text{th coin is tails}} + \underbrace{(p_kx)q_{k-1}(x)}_{k\text{th coin is heads}} = (1-p_k+p_kx)q_{k-1}(x)$$
+For the $$i$$th coin, our polynomial is $$q_i(x)=\underbrace{(1-p_i)q_{i-1}(x)}_{i\text{th coin is tails}} + \underbrace{(p_ix)q_{i-1}(x)}_{i\text{th coin is heads}} = (1-p_i+p_ix)q_{i-1}(x)$$
 
 Then it's clear the full polynomial can be factored as $$q_n(x)=(1-p_1+p_1x)(1-p_2+p_2x)\dots(1-p_n+p_nx) = k_0 + k_1x + \dots + k_nx^n$$.
 
