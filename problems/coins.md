@@ -12,4 +12,4 @@ Part 2:
 
 Show that the above condition is also necessary - if none of the coins are fair, then it is impossible that an odd number and an even number of heads is equally likely.
 
-[Solution](../solutions/coins.md)
+## [Solution](../solutions/coins.md)

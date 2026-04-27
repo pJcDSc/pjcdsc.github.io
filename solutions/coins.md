@@ -30,6 +30,6 @@ Consider $$q_n(-1)=k_0-k_1+k_2-k_3+\dots$$. This is precisely the expression abo
 
 But we also know $$q_n(-1)$$ has a [unique factorization](https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra#Corollaries) as $$(1-p_1+p_1(-1))(1-p_2+p_2(-1))\dots(1-p_n-p_n(-1)) = (1-2p_1)(1-2p_2)\dots(1-2p_n)$$. Then for this product to equal zero we [must have](https://en.wikipedia.org/wiki/Zero-product_property) at least one of $$p_i=0.5$$.
 
-This also proves sufficience.
+This also proves sufficiency.
 
 Thanks to [Thomas](https://thomasqm.com) for the beautiful solution.
