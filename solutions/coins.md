@@ -1,3 +1,5 @@
+[../problems/coins.md](Problem Statement)
+
 Part 1:
 
 WLOG let the fair coin be the $$ n $$th one, and let the random variable $$ h_{i} $$ count the number of heads flipped counting the coins from $$1$$ to $$i$$. Recall $$p_i$$ is the probably the $$i$$th coin flips heads.
@@ -12,10 +14,20 @@ Given the coins $$p$$, let's try to write the distribution of likelihoods to fli
 
 We will construct the polynomial inductively: we'll let $$q_i$$ denote the above polynomial for the first $$i$$ coins.
 
-For a single coin, our polynomial is $$q_1 = (1-p_1) + p_1x$$.
+For a single coin, our polynomial is $$q_1(x) = (1-p_1) + p_1x$$.
 
-For the $$k$$th coin, our polynomial is $$\underbrace{q_{k-1}(1-p_k)}_{\text{Prior distribution and the $$k$$th coin is tails}} + \underbrace{q_{k-1}(p_kx)}_{\text{Same, but heads}}$$ = $$q_{k-1}(1-p_k+p_kx)$$
+For the $$k$$th coin, our polynomial is $$q_k(x)=\underbrace{(1-p_k)q_{k-1}(x)}_{k\text{th coin is tails}} + \underbrace{(p_kx)q_{k-1}(x)}_{k\text{th coin is heads}} = (1-p_k+p_kx)q_{k-1}(x)$$
 
-Let's consider the polynomial $$k_0 + k_1x^1 + k_2x^2 + \dots + k_nx^n$$, where each $$k_i$$ denotes the probability of flipping $$i$$ heads.
+Then it's clear the full polynomial can be factored as $$q_n=(1-p_1+p_1x)(1-p_2+p_2x)\dots(1-p_n+p_nx) = k_0 + k_1x + \dots + k_nx^n$$.
 
-Then we have that the probability of an even number of heads
+Observe then that having the same probability of flipping an even or odd number of heads is equivalent to having $$\sum_{i\text{ even}}k_i=\sum_{j\text{ odd}}k_j\implies \sum_{i\text{ even}}k_i-\sum_{j\text{ odd}}k_j=0$$
+
+But how does the polynomial help us?
+
+We can use the [https://en.wikipedia.org/wiki/Root_of_unity](roots of unity)! 
+
+Consider $$q_n(-1)=k_0-k_1+k_2-k_3+\dots$$. This is precisely the expression above! Thus, we can observe $$q_n$$ has a root at $$x=-1$$ iff the odds of flipping an even or odd number of heads is the same!
+
+But we also know $$q_n(-1)$$ has a [https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra#Corollaries](unique factorization) as $$(1-p_1+p_1(-1))(1-p_2+p_2(-1))\dots(1-p_n-p_n(-1)) = (1-2p_1)(1-2p_2)\dots(1-2p_n)$$. Then for this product to equal zero we [https://en.wikipedia.org/wiki/Zero-product_property](must have) at least one of $$p_i=0.5$$.
+
+This also proves sufficience.
