@@ -37,3 +37,5 @@ But we also know $$q_n(-1) = (1-p_1+p_1(-1))(1-p_2+p_2(-1))\dots(1-p_n+p_n(-1)) 
 This also proves sufficiency.
 
 Thanks to [Thomas](https://thomasqm.com) for the beautiful solution.
+
+$ test $
