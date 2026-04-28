@@ -16,7 +16,7 @@ We show the contrapositive of the problem statement - that is, if an even or odd
 
 Given the coins $p$, let's try to write the distribution of likelihoods to flip any particular number of heads as a polynomial. The coefficient of each degree term will be the probability that we get that number of heads.
 
-Suppose our described polynomial is $q(x)=k_0+k_1x+k_2x^2+\dots+k_nx^n$. Then, observe that having the same probability of flipping an even or odd number of heads is equivalent to having $\sum_{i\text{ even}}k_i=\sum_{i\text{ odd}}k_i\implies \sum_{i\text{ even}}k_i-\sum_{i\text{ odd}}k_i=0$. Thus if we can find expressions for this quantity in terms of $p_i$ we are done.
+Suppose our described polynomial is $q(x)=k_0+k_1x+k_2x^2+\dots+k_nx^n$ (for $k_i$s matching the probability distribution). Then, observe that having the same probability of flipping an even or odd number of heads is equivalent to having $\sum_{i\text{ even}}k_i=\sum_{i\text{ odd}}k_i\implies \sum_{i\text{ even}}k_i-\sum_{i\text{ odd}}k_i=0$. Thus if we can find expressions for this quantity in terms of $p_i$ we are done.
 
 To do this, let's find the [unique factorization](https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra#Corollaries) of this polynomial via induction: let's denote $q_i(x)$ as the above polynomial for the first $i$ coins.
 
