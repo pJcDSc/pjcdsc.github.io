@@ -16,7 +16,7 @@ We show the contrapositive of the problem statement - that is, if an even or odd
 
 Given the coins $p$, let's try to write the distribution of likelihoods to flip any particular number of heads as a polynomial. The coefficient of each degree term will be the probability that we get that number of heads.
 
-Suppose our described polynomial is $q(x)=k_0+k_1x+k_2x^2+\dots+k_nx^n$ (for $k_i$s matching the probability distribution). Then, observe that having the same probability of flipping an even or odd number of heads is equivalent to having $\sum_{i\text{ even}}k_i=\sum_{i\text{ odd}}k_i\implies \sum_{i\text{ even}}k_i-\sum_{i\text{ odd}}k_i=0$. Thus if we can find expressions for this quantity in terms of $p_i$ we are done.
+Suppose our described polynomial is $q(x)=k_0+k_1x+k_2x^2+\dots+k_nx^n$ (for $k_i$'s matching the probability distribution). Then, observe that having the same probability of flipping an even or odd number of heads is equivalent to having $\sum_{i\text{ even}}k_i=\sum_{i\text{ odd}}k_i\implies \sum_{i\text{ even}}k_i-\sum_{i\text{ odd}}k_i=0$. Thus if we can find an expression for this quantity in terms of $p_i$ we are done.
 
 To do this, let's find the [unique factorization](https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra#Corollaries) of this polynomial via induction: let's denote $q_i(x)$ as the above polynomial for the first $i$ coins.
 
@@ -30,7 +30,7 @@ But how does the polynomial help us?
 
 We can use the [roots of unity](https://en.wikipedia.org/wiki/Root_of_unity)! 
 
-Consider $q_n(-1)=k_0-k_1+k_2-k_3+\dots$. This is precisely the expression above! Thus, we can observe $q_n$ has a root at $x=-1$ iff the odds of flipping an even or odd number of heads is the same!
+Consider $q_n(-1)=k_0-k_1+k_2-k_3+\dots$. This is precisely the sum expression we had above! Thus, we can observe $q_n$ has a root at $x=-1$ iff the odds of flipping an even or odd number of heads is the same!
 
 But we also know $q_n(-1) = (1-p_1+p_1(-1))(1-p_2+p_2(-1))\dots(1-p_n+p_n(-1)) = (1-2p_1)(1-2p_2)\dots(1-2p_n)$. Then for this product to equal zero we [must have](https://en.wikipedia.org/wiki/Zero-product_property) at least one of $p_i=0.5$.
 
