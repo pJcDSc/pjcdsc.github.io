@@ -44,7 +44,7 @@ Thanks to [Thomas](https://thomasqm.com) for the beautiful solution.
 
 Observe the actual distribution doesn't matter, just the aggregate probabilities of even or odd. 
 
-Inductively, suppose none of the first $i-1$ coins are fair. Let them have aggregate probability $q_{i-1}$ of having an even number of heads, with $q_{i-1}\neq0.5$. Then the probability the first $i$ coins flip an even number of heads is $q_{i-1}(1-p_i)+(1-q_{i-1})p_i$. It suffices to show that the only way this quantity equals 0.5 (i.e., we are equally likely to flip an even or odd number of heads) is if the $i$th coin is fair.
+Inductively, suppose none of the first $i-1$ coins are fair. Let them have aggregate probability $q_{i-1}$ of having an even number of heads, with $q_{i-1}\neq0.5$. Then the probability the first $i$ coins flip an even number of heads is $q_{i-1}(1-p_i)+(1-q_{i-1})p_i$. It suffices to show that the only way this quantity equals $0.5$ (i.e., we are equally likely to flip an even or odd number of heads) is if the $i$th coin is fair.
 
 Here we can complete the square, but we'll present an alternate deduction: 
 
