@@ -38,7 +38,7 @@ This also proves sufficiency.
 
 Thanks to [Thomas](https://thomasqm.com) for the beautiful solution.
 
-# Addendum
+## Addendum
 
 [Egor](https://github.com/eggag32) later showed me the following (much simpler) solution to Part 2:
 
