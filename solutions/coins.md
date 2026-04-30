@@ -37,3 +37,17 @@ But we also know $q_n(-1) = (1-p_1+p_1(-1))(1-p_2+p_2(-1))\dots(1-p_n+p_n(-1)) =
 This also proves sufficiency.
 
 Thanks to [Thomas](https://thomasqm.com) for the beautiful solution.
+
+# Addendum
+
+[Egor](https://github.com/eggag32) later showed me the following (much simpler) solution:
+
+Observe the actual distribution doesn't matter, just the aggregated probabilities of even or odd. 
+
+Inductively, suppose the first $i-1$ coins are all unfair. Let them have probability $q_{i-1}$ of having an even number of heads, with $q_{i-1}\neq0.5$. Then the probability the first $i$ coins flip an even number of heads is $q_{i-1}(1-p_i)+(1-q_{i-1})p_i$. It suffices to show that the only way this quantity equals 0.5 (i.e., we are equally likely to flip an even or odd number of heads) is if the $i$th coin is fair.
+
+Here it suffices to complete the square, but we'll present an alternate solution: 
+
+Suppose for contradiction $p_i\neq 0.5$. Then we can write $p_i=0.5+\epsilon$, where $\epsilon\neq 0$. Then, $q_{i-1}(1-(0.5+\epsilon))+(1-q_{i-1})(0.5+\epsilon)=0.5\implies \epsilon(1-2q_{i-1})=0$
+
+Since we set $\epsilon\neq0$, we find $q_{i-1}=0.5$, arriving at a contradiction. 
