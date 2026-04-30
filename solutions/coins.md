@@ -30,7 +30,7 @@ But how does the polynomial help us?
 
 We can use the [roots of unity](https://en.wikipedia.org/wiki/Root_of_unity)! 
 
-Consider $q_n(-1)=k_0-k_1+k_2-k_3+\dots$. This is precisely the sum expression we had above! Thus, we can observe $q_n$ has a root at $x=-1$ iff the odds of flipping an even or odd number of heads is the same!
+Consider $q_n(-1)=k_0-k_1+k_2-k_3+\dots$. This is precisely the sum expression we had above! Thus, we can observe $q_n$ has a root at $x=-1$ iff the odds of flipping an even or odd number of heads is the same.
 
 But we also know $q_n(-1) = (1-p_1+p_1(-1))(1-p_2+p_2(-1))\dots(1-p_n+p_n(-1)) = (1-2p_1)(1-2p_2)\dots(1-2p_n)$. Then for this product to equal zero we [must have](https://en.wikipedia.org/wiki/Zero-product_property) at least one of $p_i=0.5$.
 
@@ -40,14 +40,14 @@ Thanks to [Thomas](https://thomasqm.com) for the beautiful solution.
 
 # Addendum
 
-[Egor](https://github.com/eggag32) later showed me the following (much simpler) solution:
+[Egor](https://github.com/eggag32) later showed me the following (much simpler) solution to Part 2:
 
-Observe the actual distribution doesn't matter, just the aggregated probabilities of even or odd. 
+Observe the actual distribution doesn't matter, just the aggregate probabilities of even or odd. 
 
-Inductively, suppose the first $i-1$ coins are all unfair. Let them have probability $q_{i-1}$ of having an even number of heads, with $q_{i-1}\neq0.5$. Then the probability the first $i$ coins flip an even number of heads is $q_{i-1}(1-p_i)+(1-q_{i-1})p_i$. It suffices to show that the only way this quantity equals 0.5 (i.e., we are equally likely to flip an even or odd number of heads) is if the $i$th coin is fair.
+Inductively, suppose none of the first $i-1$ coins are fair. Let them have aggregate probability $q_{i-1}$ of having an even number of heads, with $q_{i-1}\neq0.5$. Then the probability the first $i$ coins flip an even number of heads is $q_{i-1}(1-p_i)+(1-q_{i-1})p_i$. It suffices to show that the only way this quantity equals 0.5 (i.e., we are equally likely to flip an even or odd number of heads) is if the $i$th coin is fair.
 
-Here it suffices to complete the square, but we'll present an alternate solution: 
+Here we can complete the square, but we'll present an alternate deduction: 
 
-Suppose for contradiction $p_i\neq 0.5$. Then we can write $p_i=0.5+\epsilon$, where $\epsilon\neq 0$. Then, $q_{i-1}(1-(0.5+\epsilon))+(1-q_{i-1})(0.5+\epsilon)=0.5\implies \epsilon(1-2q_{i-1})=0$
+Suppose for contradiction $p_i\neq 0.5$. Then we can write $p_i=0.5+\epsilon$, where $\epsilon\neq 0$. Then, $q_{i-1}(1-(0.5+\epsilon))+(1-q_{i-1})(0.5+\epsilon)=0.5\implies \epsilon(1-2q_{i-1})=0$.
 
 Since we set $\epsilon\neq0$, we find $q_{i-1}=0.5$, arriving at a contradiction. 
