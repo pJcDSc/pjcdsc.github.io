@@ -2,7 +2,7 @@
 
 [Problem Statement](../problems/coins.md)
 
-Part 1:
+### Part 1:
 
 WLOG let the fair coin be the $n$th one, and let the random variable $h_{i}$ count the number of heads flipped counting the coins from $1$ to $i$. Recall $p_i$ is the probability the $i$th coin flips heads.
 
@@ -10,7 +10,7 @@ Then, we have $P(h_{n} \text{ is even}) = P(h_{n-1} \text{ is even})(1-p_n) + P(
 
 But we know $P(h_{n-1} \text{ is even or odd}) = 1$ and $p_n=1-p_n=0.5$, so we have $P(h_{n} \text{ is even})=0.5$
 
-Part 2:
+### Part 2:
 
 We show the contrapositive of the problem statement - that is, if an even or odd number of heads is equally likely, then at least one coin must be fair.
 
@@ -38,7 +38,7 @@ This also proves sufficiency.
 
 Thanks to [Thomas](https://thomasqm.com) for the beautiful solution.
 
-## Addendum
+### Addendum
 
 [Egor](https://github.com/eggag32) later showed me the following (much simpler) solution to Part 2:
 
